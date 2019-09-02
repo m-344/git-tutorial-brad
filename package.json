@@ -1,0 +1,19 @@
+{
+  "name": "git-tutorial-brad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-344/git-tutorial-brad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-344/git-tutorial-brad/issues"
+  },
+  "homepage": "https://github.com/m-344/git-tutorial-brad#readme"
+}
