@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/m-344/git-tutorial-brad/issues"
   },
-  "homepage": "https://github.com/m-344/git-tutorial-brad#readme"
+  "homepage": "https://github.com/m-344/git-tutorial-brad#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
