@@ -2,12 +2,10 @@ var gulp = require('gulp'),
 watch = require('gulp-watch');
 
 gulp.task('styles', function () {
-	console.log('works');
+	return gulp.src('./app/assets/styles/styles.css').pipe(gulp.dest('./app/temp/styles'));
 });
 
 gulp.task('watch', function () {
 	
-	watch('./assets/styles/**/*..css', function () {
-		gulp.start('styles');
-	})
-});
+	watch('./app/assets/styles/**/*.css', gulp.series('styles'));		
+	});
