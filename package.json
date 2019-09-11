@@ -18,5 +18,8 @@
   "homepage": "https://github.com/m-344/git-tutorial-brad#readme",
   "dependencies": {
     "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
