@@ -7,7 +7,7 @@ gulp.task('styles', function () {
 
 gulp.task('watch', function () {
 	
-	watch('./styles/**/*..css', function () {
+	watch('./assets/styles/**/*..css', function () {
 		gulp.start('styles');
 	})
 });
