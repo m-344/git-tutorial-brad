@@ -6,12 +6,10 @@ cssvars = require('postcss-simple-vars'),
 postcssNested = require('postcss-nested');
 
 gulp.task('styles', function () {
-	return gulp.src('./app/assets/styles/styles.css')
-	.pipe(postcss([postcssNested, cssvars, autoprefixer])
-	.pipe(gulp.dest('./app/temp/styles'));
+	return gulp.src('./app/assets/styles/styles.css').pipe(postcss([postcssNested, cssvars, autoprefixer])).pipe(gulp.dest('./app/temp/styles'));
 });
 
 gulp.task('watch', function () {
 	
-	watch('./app/assets/styles/**/*.css', gulp.series('styles'));		
-	});
+	watch('./app/assets/styles/**/*.css', gulp.series('styles'));
+});
