@@ -15,16 +15,12 @@ gulp.task('watch', function () {
 		browserSync.reload();
 	});
 	
-	watch('./app/assets/styles/**/*.css', gulp.series('cssInject'));
+	watch('./app/assets/styles/**/*.css', gulp.series('manageCSS'));
 	
-	/*	another possibility to update CSS if cssInject doesn't work*/
-	/*	watch('./app/assets/styles/\**\/*.css', function () {
-	browserSync.reload();
-	});*/
 });
 
-/*second argument is called 'dependencies' (series())*/
-gulp.task('cssInject', gulp.series('styles'), function () {
-	/*return is needed bcs .src is an asynchronious function*/
+gulp.task('cssInject', function () {
 	return gulp.src('./app/temp/styles/styles.css').pipe(browserSync.stream());
 });
+
+gulp.task('manageCSS', gulp.series('styles', 'cssInject'));
