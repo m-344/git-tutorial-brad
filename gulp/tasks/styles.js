@@ -4,12 +4,15 @@ cssImport = require('postcss-import'),
 nested = require('postcss-nested'),
 cssvars = require('postcss-simple-vars'),
 autoprefixer = require('autoprefixer'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+mixins = require('postcss-mixins');
 
 gulp.task('styles', function () {
-	return gulp.src('./app/assets/styles/styles.css').pipe(postcss([cssImport, nested, cssvars, autoprefixer])).on('error', function (errorInfo) {
+	return gulp.src('./app/assets/styles/styles.css').pipe(postcss([cssImport, mixins, nested, cssvars, autoprefixer])).on('error', function (errorInfo) {
 		console.log(errorInfo.toString());
 		this.emit('end');
 	}).pipe(gulp.dest('./app/temp/styles'));
+/*	the on() is a mechanism to prevent gulp watch stop if an error ocures on the one hand; on hte other hand it throws an error message*/
 });
 
+ 
