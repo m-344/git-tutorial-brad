@@ -4,7 +4,8 @@
         <filters directoryPatterns="" filePatterns="git-tutorial_brad" positiveFilePatterns="" showHiddenFiles="false"/>
         <options/>
     </meta>
-    <projectTree name="git-tutorial_brad">
+    <projectTree name="git-tutorial_brad.xpr">
+        <folder path="../../../../Documents/working-set/notes/"/>
         <folder path="."/>
     </projectTree>
 </project>
