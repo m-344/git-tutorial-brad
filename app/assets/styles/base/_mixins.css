@@ -1,0 +1,18 @@
+/*@media query allows to recognize how wide the screen is. In the case of atSmall it is bigger then 530px*/
+@define-mixin atSmall {
+	@media (min-width:530px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (min-width:800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (min-width:1200px) {
+		@mixin-content;
+	}
+}
