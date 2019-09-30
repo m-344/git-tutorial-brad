@@ -1,5 +1,10 @@
 .large-hero {
+	border-bottom: 10px solid $mainBlue;
 	position: relative;
+	
+	&__image {
+		display:block;
+	}
 	
 		&__text-content {
 			position: absolute;
@@ -15,24 +20,18 @@
 			font-weight: 300;
 			color: $mainBlue;
 			margin:0;
-			font-size:1.1rem;
+			font-size:2.4rem;
 			
 /*web responsive, mobile-first CSS pattern. Needed to adjust the font size to the different screens*/
 			@mixin atSmall {
-				font-size: 2rem;
-			}
-			@mixin atMedium {
-				font-size: 3.2rem;
-			}
-			@mixin atLarge {
 				font-size: 4.8rem;
-			}
+			}	
 		}
 		
 		&__subtitle {
 			font-weight: 300;
 			color: $mainBlue;
-			font-size:1.1rem;
+			font-size:1.5rem;
 			margin:0;
 			
 			@mixin atSmall {
@@ -42,11 +41,15 @@
 		
 		&__description {
 			color:#FFF;
-			font-size: 1.875rem; /*find the rem value by dividing the px value by 16 (is default value of the font of the root element by the most browsers).*/
+			font-size: 1.1rem; /*find the rem value by dividing the px value by 16 (is default value of the font of the root element by the most browsers).*/
 			font-weight: 100;
 			text-shadow: 2px 2px 0 rgba(0,0,0, .1);
 			max-width:30rem;
 			margin-right:auto;
 			margin-left:auto;
+			
+			@mixin atSmall{
+				font-size:1.875rem;
+			}
 		}
 }
