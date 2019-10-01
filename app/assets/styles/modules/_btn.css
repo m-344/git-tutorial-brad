@@ -5,6 +5,7 @@
 	padding: .75rem 1.2rem;/*the first parameter is for top and bottom, the second for left and right*/
 	display: inline-block;	
 		
+		
 	&--orange {
 		background-color:$mainOrange;
 	}
