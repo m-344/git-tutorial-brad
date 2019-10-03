@@ -9,4 +9,10 @@ img {
 	height: auto;
 }
 
-strong { font-weight: bold; }
+strong {
+	font-weight: bold;
+}
+* {
+	box-sizing: border-box;
+	/*	the way the browser calculates the width*/
+}

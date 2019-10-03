@@ -7,6 +7,9 @@
 @import "modules/_wrapper.css";
 @import "modules/_page-section.css";
 @import "modules/_headline.css";
+@import "modules/_row.css";
+
+
 
 /*calculate rem: px div by 16*/
 /*em referes to the font-size of the elemets itself*/
