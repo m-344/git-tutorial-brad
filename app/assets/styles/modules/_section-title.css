@@ -1,0 +1,10 @@
+.section-title {
+	font-size:3.7rem;
+	font-weight:300;
+	text-align:center;
+	
+	&__icon {
+		margin-right: .5rem;
+	}
+	
+}
