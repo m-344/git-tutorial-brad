@@ -31,3 +31,4 @@ dwsync.xml
 
 #custom
 node_modules/
+app/temp/*
