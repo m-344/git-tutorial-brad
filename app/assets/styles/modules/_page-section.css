@@ -1,7 +1,10 @@
 .page-section{
 	padding:4.5rem 0; /*vertical and horizontal paddings*/
 	
+	&--text-white {
+	color:white;		
+	}
 	&--blue {
 		background-color:$mainBlue;
-	}
+	}	
 }
