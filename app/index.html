@@ -55,13 +55,13 @@
 				<h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone</strong>.</h3>
 				<div class="wrapper wrapper-medium wrapper--b-margin">
 					<!--Here is no need for picture element, bcs. we only change the resolutions (not the cropped versions as in the picture 'our-start'). Note: change @src to @srcset-->
-<!--'100vw' stands for 'viewport width'-->
-					<img sizes="(min-width: 970px) 976px, 100vw" alt="Couple walking down a street." srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" />
+					<!--'100vw' stands for 'viewport width'-->
+					<img alt="Couple walking down a street." sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" />
 				</div>
 				<div class="row row--gutters">
-					<div class="row__medium-4 row__medium-4--larger">
+					<div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
 						<picture>
-							<!--The browser can alterate between different resolutions of the picture: normal and high dpi. which are set in @srcset. The parameter which comes after the path is the width (e.g.404w)-->
+							<!--The browser can alterate between different resolutions of the picture: normal and high dpi. which are set in @srcset. The parameter which comes after the path is the width (e.g.404w) @sizes says the browser which width should it use. Otherwise, it will use the full width-->
 							<source media="(min-width: 1020px)" sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w"></source>
 							<!--If the screen is larger then 800 px, use a different picture source-->
 							<source media="(min-width: 800px)" sizes="320px" srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w"></source>
@@ -85,7 +85,6 @@
 			<div class="wrapper">
 				<img src="assets/images/icons/star.svg" />
 				<h2>Our Features</h2>
-
 				<img src="assets/images/icons/rain.svg" />
 				<h3>We&rsquo;ll Watch the Weather</h3>
 				<p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>

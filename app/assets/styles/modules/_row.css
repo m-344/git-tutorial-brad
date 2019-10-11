@@ -4,14 +4,25 @@
 	&--gutters {
 		margin-right:-65px;
 	}
+	
 	&--gutters > div {
 		padding-right:65px;
 	}
 	
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;/*for very small screens*/
+	}
+	
 		@mixin atMedium {
-			&__medium-4 {
-		float:left;
-		width:33.33%;
+		
+			&__b-margin-until-medium {
+				margin-bottom:0; /*should be reset to 0 for larger screens*/
+			}
+			
+			
+		&__medium-4 	{
+			float:left;
+			width:33.33%;
 		}
 		
 		&__medium-4--larger {

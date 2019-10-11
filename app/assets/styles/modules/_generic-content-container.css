@@ -1,8 +1,12 @@
 .generic-content-container{
 	p {
-		line-height:1.65;
-		font-size:1.125rem;
+		line-height:1.65;/*doesn't require units*/		
 		margin:1.8rem 0;
+	/*base font-size is set to 1 rem as default*/
+		@mixin atSmall {
+			font-size:1.125rem;
+		}
+		
 	}
 	
 	p a{
