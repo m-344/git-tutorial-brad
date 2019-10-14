@@ -1,10 +1,19 @@
-.page-section{
-	padding:4.5rem 0; /*vertical and horizontal paddings*/
+.page-section {
+
+	padding: 4.5rem 0; /*vertical and horizontal paddings*/
 	
 	&--text-white {
-	color:white;		
+		color: white;		
 	}
+	
 	&--blue {
-		background-color:$mainBlue;
+		background-color: $mainBlue;
 	}	
+	
+	&--testimonials {
+		/* 'top' and 'center' are alignment parameters */
+		background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+/* the property defines if the image is big or small enough to cover a s div */
+		background-size: cover;
+	}
 }
