@@ -1,5 +1,9 @@
 .row {
 	@mixin clearfix;
+	
+	&--t-padding {
+		padding-top:80px;
+	}
 
 	&--gutters {
 		margin-right: -65px;
@@ -7,6 +11,10 @@
 	
 	&--gutters-large {
 		margin-right: -100px;		
+	}
+	
+	&--gutters-small {
+		margin-right: -45px;		
 	}
 	
 	&--gutters > div {
@@ -17,6 +25,10 @@
 		padding-right: 100px;
 	}
 	
+	&--gutters-small > div {
+		padding-right: 45px;
+	}
+		
 	&__b-margin-until-medium {
 		margin-bottom: 1rem;/*for very small screens*/
 	}
