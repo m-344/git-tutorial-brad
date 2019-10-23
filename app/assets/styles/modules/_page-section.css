@@ -1,9 +1,21 @@
 .page-section {
+	padding: 1.2rem 0;
 
-	padding: 4.5rem 0; /*vertical and horizontal paddings*/
 	
 	&--text-white {
 		color: white;		
+	}
+	
+	@mixin atMedium {
+		padding: 4.5rem 0; /*vertical and horizontal paddings*/
+	}
+	
+	&--no-b-paddding-until-medium {
+		padding-bottom: 0;
+		
+		@mixin atMedium {
+			padding-bottom: 4.5rem;
+		}
 	}
 	
 	&--blue {
@@ -11,9 +23,13 @@
 	}	
 	
 	&--testimonials {
-		/* 'top' and 'center' are alignment parameters */
+		background-color: #e0e6ef;
+		@mixin atMedium {
+			/* 'top' and 'center' are alignment parameters */
 		background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-/* the property defines if the image is big or small enough to cover a s div */
+		
+/* the property defines if the image is big or small enough to cover a div */
 		background-size: cover;
+		}		
 	}
 }
