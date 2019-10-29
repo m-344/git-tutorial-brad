@@ -18,18 +18,25 @@
 		}
 	}
 	
-	
+	&--no-b-paddding-until-large {
+		padding-bottom: 0;
+		
+		@mixin atLarge {
+			padding-bottom: 4.5rem;
+		}
+	}
+		
 	&--blue {
 		background-color: $mainBlue;
 	}	
 	
 	&--testimonials {
 		background-color: #e0e6ef;
-		@mixin atMedium {
-			/* 'top' and 'center' are alignment parameters */
-		background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-		
-/* the property defines if the image is big or small enough to cover a div */
+		@mixin atLarge {
+				/* 'top' and 'center' are alignment parameters */
+			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+			
+	/* the property defines if the image is big or small enough to cover a div */
 		background-size: cover;
 		}		
 	}
