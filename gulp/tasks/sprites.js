@@ -2,13 +2,13 @@ var gulp = require('gulp'),
 svgSprite = require('gulp-svg-sprite');
 
 /*the variable config is an object literal which is passed as an agrument into svgSprite()*/
-var config {
+var config = {
 	mode: {
 		css: {
 			
 		}
 	}
-}
+};
 
 /*arg1='name of the task', arg2='what the task do'*/
 gulp.task('createSprite', function () {
