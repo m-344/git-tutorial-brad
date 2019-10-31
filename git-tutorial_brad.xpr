@@ -6,6 +6,150 @@
             <serialized version="20.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>custom.validation.parsers.v9.2</String>
+                        <pluggableErrorScanner-array>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>LIBXML</String>
+                                </field>
+                                <field name="command">
+                                    <String>xmllint</String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xml|text/xml# --noout ${cf}&lt;SEP>text/dtd# --noout --catalogs --xinclude --postvalid ${cf}&lt;SEP>text/xsd# --noout --catalogs --xinclude --schema ${ds} ${cf}&lt;SEP>text/rng# --noout --catalogs --xinclude --relaxng ${ds} ${cf}</String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>${oxygenInstallDir}</String>
+                                </field>
+                            </pluggableErrorScanner>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="command">
+                                    <String></String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xml|text/xsd# </String>
+                                        <String>text/xsd|text/xml# </String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>.</String>
+                                </field>
+                            </pluggableErrorScanner>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>MSXML.NET</String>
+                                </field>
+                                <field name="command">
+                                    <String>${oxygenInstallDir}/dotnetValidator.exe</String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xml|text/xml# ${cf} --auto&lt;SEP>text/xsd# ${cf} --xsd ${ds}&lt;SEP>text/dtd# ${cf} --dtd ${ds}</String>
+                                        <String>text/xsd|text/xml# ${cf} --schema</String>
+                                        <String>text/xsl|text/xml# ${cf} --xsl</String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>${oxygenInstallDir}</String>
+                                </field>
+                            </pluggableErrorScanner>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>XSV</String>
+                                </field>
+                                <field name="command">
+                                    <String>${oxygenInstallDir}/xsv/xsv.exe</String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xml|text/xsd# ${currentFileURL} ${dsu}&lt;SEP>text/xml# ${currentFileURL}</String>
+                                        <String>text/xsd|text/xml# -i ${currentFileURL}</String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>${oxygenInstallDir}</String>
+                                </field>
+                            </pluggableErrorScanner>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>SQC</String>
+                                </field>
+                                <field name="command">
+                                    <String>${oxygenInstallDir}/sqc/sqc.bat</String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xsd|text/xml# ${cf}</String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>${oxygenInstallDir}/sqc/</String>
+                                </field>
+                            </pluggableErrorScanner>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>MSXML4.0</String>
+                                </field>
+                                <field name="command">
+                                    <String>${oxygenInstallDir}/msValidator.exe</String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xml|text/xsd# ${cf} -xsd ${ds}&lt;SEP>text/dtd# ${cf} -dtd&lt;SEP>text/xml# ${cf} -dtd</String>
+                                        <String>text/xsd|text/xml# ${cf} -schema</String>
+                                        <String>text/xsl|text/xml# ${cf} -xsl</String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>${oxygenInstallDir}</String>
+                                </field>
+                            </pluggableErrorScanner>
+                            <pluggableErrorScanner>
+                                <field name="nativeName">
+                                    <String>HTML5</String>
+                                </field>
+                                <field name="command">
+                                    <String>${oxygenInstallDir}/html5/dist/vnu.jar</String>
+                                </field>
+                                <field name="isPreconfigured">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="arguments">
+                                    <String-array>
+                                        <String>text/xml|text/nvdl#${cf}</String>
+                                    </String-array>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>${oxygenInstallDir}</String>
+                                </field>
+                            </pluggableErrorScanner>
+                        </pluggableErrorScanner-array>
+                    </entry>
+                    <entry>
                         <String>document.type.use.grammar.cache</String>
                         <Boolean>false</Boolean>
                     </entry>
@@ -677,12 +821,125 @@
                         </documentTypeDescriptor-array>
                     </entry>
                     <entry>
+                        <String>external.tool.cmds</String>
+                        <xsltCustomEngines-array>
+                            <xsltCustomEngines>
+                                <field name="outEncoding">
+                                    <null/>
+                                </field>
+                                <field name="outContentType">
+                                    <String>text/plain</String>
+                                </field>
+                                <field name="errEncoding">
+                                    <null/>
+                                </field>
+                                <field name="cmd">
+                                    <String>java -jar ""C:\Users\sapov\html5\dist\vnu.jar""  ${cf}</String>
+                                </field>
+                                <field name="description">
+                                    <String>validation</String>
+                                </field>
+                                <field name="name">
+                                    <String>HTML5</String>
+                                </field>
+                                <field name="workingDirectory">
+                                    <String>.</String>
+                                </field>
+                                <field name="keyStroke">
+                                    <null/>
+                                </field>
+                                <field name="isBuiltin">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showConsole">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </xsltCustomEngines>
+                        </xsltCustomEngines-array>
+                    </entry>
+                    <entry>
                         <String>key.css.validator.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.custom.validation.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
                         <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.external.tools.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>validation.scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>app/index.html</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>HTML5</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>Validation_scenario</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array>
+                            <validationScenario>
+                                <field name="pairs">
+                                    <list>
+                                        <validationUnit>
+                                            <field name="validationType">
+                                                <validationUnitType>
+                                                    <field name="validationInputType">
+                                                        <String>text/xml</String>
+                                                    </field>
+                                                </validationUnitType>
+                                            </field>
+                                            <field name="url">
+                                                <String>${currentFileURL}</String>
+                                            </field>
+                                            <field name="validationEngine">
+                                                <validationEngine>
+                                                    <field name="engineType">
+                                                        <String>HTML5</String>
+                                                    </field>
+                                                    <field name="allowsAutomaticValidation">
+                                                        <Boolean>false</Boolean>
+                                                    </field>
+                                                </validationEngine>
+                                            </field>
+                                            <field name="allowAutomaticValidation">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="extensions">
+                                                <null/>
+                                            </field>
+                                            <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                        </validationUnit>
+                                    </list>
+                                </field>
+                                <field name="type">
+                                    <String>Validation_scenario</String>
+                                </field>
+                                <field name="name">
+                                    <String>HTML5</String>
+                                </field>
+                            </validationScenario>
+                        </validationScenario-array>
                     </entry>
                 </serializableOrderedMap>
             </serialized>
