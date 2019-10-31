@@ -21,10 +21,11 @@ gulp.task('createSprite', function () {
 	return gulp.src('./app/assets/images/icons/**/*.svg').pipe(svgSprite(config)).pipe(gulp.dest('./app/temp/sprite/'));
 });
 /*copy file from one destination to another*/
-gulp.task('copySpriteCSS', function(){
+gulp.task('copySprite', function(){
 	return gulp.src('./app/temp/sprite/css/**/*.css')
 	.pipe(rename('_sprite.css'))
 	.pipe(gulp.dest('./app/assets/styles/modules/'));
 });
 
+gulp.task('icons', gulp.series('createSprite', 'copySprite'));
 
