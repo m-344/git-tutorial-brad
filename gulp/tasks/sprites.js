@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-svgSprite = require('gulp-svg-sprite');
+svgSprite = require('gulp-svg-sprite'),
+rename = require('gulp-rename');
 
 /*the variable config is an object literal which is passed as an agrument into svgSprite()*/
 var config = {
@@ -21,5 +22,9 @@ gulp.task('createSprite', function () {
 });
 /*copy file from one destination to another*/
 gulp.task('copySpriteCSS', function(){
-	return gulp.src('./app/temp/sprite/css/**/*.css').pipe(gulp.dest('./app/assets/styles/modules/'));
+	return gulp.src('./app/temp/sprite/css/**/*.css')
+	.pipe(rename('_sprite.css'))
+	.pipe(gulp.dest('./app/assets/styles/modules/'));
 });
+
+

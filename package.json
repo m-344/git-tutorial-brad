@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/m-344/git-tutorial-brad#readme",
   "dependencies": {
+    "gulp-rename": "^1.4.0",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1"
   },
