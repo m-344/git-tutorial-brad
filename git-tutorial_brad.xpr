@@ -874,26 +874,6 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
-                        <String>validation.scenario.associations</String>
-                        <scenarioAssociation-array>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>app/index.html</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>HTML5</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>Validation_scenario</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                        </scenarioAssociation-array>
-                    </entry>
-                    <entry>
                         <String>validation.scenarios</String>
                         <validationScenario-array>
                             <validationScenario>
