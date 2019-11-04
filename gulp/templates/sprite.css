@@ -1,10 +1,21 @@
+/*Do not edit modules/_sprite directly asit is generated automatically by Gulp. Instead edit gulp/templates/sprite*/
+
+
 /*mustashe template system*/
 /*loop*/
 {{#shapes}}
+
+/*the rule applies only for the first item in the loop*/
+	{{#first}}
+		.icon {
+			background-image: url('../sprite/css/{{{sprite}}}');
+			}
+	{{/first}}
+	
+
 	.icon--{{base}}{
 		width: {{width.outer}}px;
-		height: {{height.outer}}px;
-		background-image: url('../sprite/css/{{{sprite}}}');
+		height: {{height.outer}}px;	
 		background-position: {{position.relative.xy}};
 	}
 {{/shapes}}

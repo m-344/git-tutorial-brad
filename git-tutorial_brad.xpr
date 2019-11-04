@@ -921,6 +921,10 @@
                             </validationScenario>
                         </validationScenario-array>
                     </entry>
+                    <entry>
+                        <String>warning.level</String>
+                        <Integer>0</Integer>
+                    </entry>
                 </serializableOrderedMap>
             </serialized>
         </options>
