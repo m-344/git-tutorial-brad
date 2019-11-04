@@ -6,7 +6,8 @@
 
 /*the rule applies only for the first item in the loop*/
 		.icon {
-			background-image: url('../sprite/css/svg/sprite-172298e6.svg');
+/*note how the url starts with '/' which means 'the root of the project'*/
+			background-image: url('/assets/images/sprites/sprite-172298e6.svg');
 			}
 	
 

@@ -22,7 +22,8 @@ var config = {
 gulp.task('createSprite', function () {
 	return gulp.src('./app/assets/images/icons/**/*.svg').pipe(svgSprite(config)).pipe(gulp.dest('./app/temp/sprite/'));
 });
-/*Copies the graphic created with createSprite task */
+
+/*Copies the graphic which was created by  the 'createSprite' task */
 gulp.task('copySpriteGraphic', function () {
 	return gulp.src('./app/temp/sprite/css/**/*.svg').pipe(gulp.dest('./app/assets/images/sprites'));
 });
