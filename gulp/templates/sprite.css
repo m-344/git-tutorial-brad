@@ -8,7 +8,8 @@
 /*the rule applies only for the first item in the loop*/
 	{{#first}}
 		.icon {
-			background-image: url('../sprite/css/{{{sprite}}}');
+/*note how the url starts with '/' which means 'the root of the project'*/
+			background-image: url('/assets/images/sprites/{{{sprite}}}');
 			}
 	{{/first}}
 	
