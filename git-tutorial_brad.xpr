@@ -821,6 +821,10 @@
                         </documentTypeDescriptor-array>
                     </entry>
                     <entry>
+                        <String>editor.font</String>
+                        <String>Monospaced,0,20</String>
+                    </entry>
+                    <entry>
                         <String>external.tool.cmds</String>
                         <xsltCustomEngines-array>
                             <xsltCustomEngines>
@@ -871,6 +875,10 @@
                     </entry>
                     <entry>
                         <String>key.external.tools.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.fonts.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
