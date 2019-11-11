@@ -9,4 +9,7 @@ function Person(fullName, favColor) {
 	}
 }
 
+/*we say to 'exports' literally be a Person constructer function
+ * 'module' is parent of exports
+ * */
 module.exports = Person;
