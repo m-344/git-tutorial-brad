@@ -24,9 +24,10 @@ gulp.task('watch', function () {
 gulp.task('cssInject', function () {
 	return gulp.src('./app/temp/styles/styles.css').pipe(browserSync.stream());
 });
+/*
 gulp.task('reloadBrowser', function () {
 	browserSync.reload();	
-});
+});*/
 
 gulp.task('manageCSS', gulp.series('styles', 'cssInject'));
 gulp.task('scriptsRefresh', gulp.series('scripts'));
