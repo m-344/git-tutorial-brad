@@ -14,4 +14,8 @@ class Person {
 /*we say to 'exports' literally be a Person constructer function
  * 'module' is parent of exports
  * */
-module.exports = Person;
+ 
+/*NodeJS
+ * module.exports = Person;*/
+/* ECMAscript6:*/
+export default Person;
