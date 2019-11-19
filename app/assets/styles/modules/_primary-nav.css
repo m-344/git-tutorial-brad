@@ -37,6 +37,9 @@
 		display: block;
 		padding: 12px 0;
 
+	@mixin atMedium {
+		padding: 12px;
+	}
 	}
 
 }
