@@ -48,8 +48,10 @@ the 'ease-out' is a type of transition (default is linear)
 		height: 20px;
 		background-color: #FFF;
 		position: absolute;
+		z-index: 10;
 		top: 10 px;
 		right: 10px;
+
 		@mixin atMedium {
 			display: none;
 		}
@@ -57,6 +59,7 @@ the 'ease-out' is a type of transition (default is linear)
 
 	&__menu-content {
 		opacity: 0;
+		transform: scale(1.2);
 		transition: all .3s ease-out;
 /* z-index ensures that the div will be hidden and the user cannot accidently click
 the menu icon which is hidden
@@ -71,11 +74,13 @@ note: with z-index we should use position: relative; otherwise the browser wil i
 			opacity: 1;
 			z-index: 1;
 			padding-top: 0;
+			transform: scale(1);
 		}
 
 			&--is-visible {
 				opacity: 1;
 				z-index: 1;
+				transform: scale(1);
 		}
 	}
 }
