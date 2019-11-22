@@ -16,9 +16,6 @@
 @import "modules/_site-footer.css";
 @import "modules/_site-header.css";
 @import "modules/_primary-nav.css";
-
-
-
+@import "modules/_reveal-item.css";
 /*calculate rem: px div by 16*/
 /*em referes to the font-size of the elemets itself*/
-
