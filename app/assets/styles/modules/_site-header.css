@@ -61,6 +61,14 @@ the 'ease-out' is a type of transition (default is linear)
       width: 20px;
       height: 3px;
       background-color: #FFF;
+      /* the property transfomr-origin
+For instance:
+there is a hamburger line. Its origin (pivot point) is set to the middle of that line (so the values
+are set to 50% 50%). If we rotate the line (what we are doing by JS by adding the
+&__menu-icon--close-x  class) the it will rotate along its center. but we need from
+ its left upper corner insted
+       */
+      transform-origin: 0 0;
     }
 
     &__middle {
@@ -80,10 +88,31 @@ the 'ease-out' is a type of transition (default is linear)
       width: 20px;
       height: 3px;
       background-color: #FFF;
+      /* here we specify the bottom left corner
+'0' points to the left corner
+'100%' points to the very vertical bottom
+      */
+      transform-origin: 0 100%;
     }
 
     @mixin atMedium {
       display: none;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      /* scaleX is needed to reach the 'hamburger line' the bottom right corner */
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+    }
+
+    &::after {
+      /* scaleX is needed to reach the 'hamburger line' the bottom right corner */
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
   }
 
