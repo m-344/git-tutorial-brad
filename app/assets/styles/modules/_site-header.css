@@ -52,7 +52,9 @@ the 'ease-out' is a type of transition (default is linear)
     top: 10 px;
     right: 10px;
 
-    &__top {
+    /* pseudo element. spares html code. the content property is needed to be the property rendered */
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -70,7 +72,8 @@ the 'ease-out' is a type of transition (default is linear)
       background-color: #FFF;
     }
 
-    &__bottom {
+    &::after {
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
