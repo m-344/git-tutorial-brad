@@ -50,6 +50,13 @@
       font-size: 1rem;
       padding: 12px;
       background-color: transparent;
+
+      /* & refers to a
+has condition if only the 'a' has class "is-current-link"
+ */
+      &.is-current-link {
+        color: #fabb69;
+      }
     }
   }
 }

@@ -6,7 +6,8 @@ class StickyHeader {
     this.siteHeader = $(".site-header");
     this.headerTriggerElement = $(".large-hero__title");
     this.createHeaderWaypoint();
-    this.pageSection = $(".page-section");
+    this.pageSections = $(".page-section");
+    this.headerLinks = $(".primary-nav a");
     this.createPageSectionWaypoints();
   }
 
@@ -27,12 +28,15 @@ class StickyHeader {
   }
 
   createPageSectionWaypoints() {
+    var that = this;
     this.pageSections.each(function() {
       var currentPageSection = this;
       new Waypoint({
         element: currentPageSection,
         handler: function() {
-          var matchingHeaderLink = currentPageSection.getAtribute("data-matching-link");
+          var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+          // first remove the class from all els then add only to the one we need
+          that.headerLinks.removeClass("is-current-link");
           $(matchingHeaderLink).addClass("is-current-link");
         }
       });
