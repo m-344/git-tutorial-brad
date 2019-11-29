@@ -1,6 +1,7 @@
 .reveal-item {
   /* hide the el */
   opacity: 0;
+  /* 'all' refers to all properties */
   transition: all 1.5s ease-out;
   transform: scale(1.15);
 
