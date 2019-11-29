@@ -14,6 +14,7 @@ the 'ease-out' is a type of transition (default is linear)
   }
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, .3);
   }
 
