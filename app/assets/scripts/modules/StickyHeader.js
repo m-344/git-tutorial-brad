@@ -38,7 +38,8 @@ class StickyHeader {
           // first remove the class from all els then add only to the one we need
           that.headerLinks.removeClass("is-current-link");
           $(matchingHeaderLink).addClass("is-current-link");
-        }
+        },
+        offset: "18%"
       });
     });
   }
