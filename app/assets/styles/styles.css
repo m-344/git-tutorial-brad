@@ -18,5 +18,6 @@
 @import "modules/_primary-nav.css";
 @import "modules/_reveal-item.css";
 @import "modules/_modal.css";
+@import "modules/_social-icons.css";
 /*calculate rem: px div by 16*/
 /*em referes to the font-size of the elemets itself*/
