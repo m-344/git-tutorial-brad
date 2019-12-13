@@ -48,7 +48,7 @@ the 'ease-out' is a type of transition (default is linear)
 the '&' stands here for '&__logo'*/
       .site-header--dark & {
         /* the '1' is elements natural size */
-        transform: scale(.57);
+        transform: scale(.56);
       }
     }
   }

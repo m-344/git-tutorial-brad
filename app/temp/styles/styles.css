@@ -1141,7 +1141,7 @@ the '&' stands here for '&__logo'*/
   }
       .site-header--dark .site-header__logo {
         /* the '1' is elements natural size */
-        transform: scale(.57);
+        transform: scale(.56);
       }
 	}
 
