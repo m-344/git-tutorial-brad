@@ -22,7 +22,6 @@ class StickyHeader {
     });
   }
 
-
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
   }
@@ -75,5 +74,5 @@ class StickyHeader {
   }
 }
 
-// export is needed in order to be abel to use it in another file
+// export is needed in order to be abel touse it in another file
 export default StickyHeader;

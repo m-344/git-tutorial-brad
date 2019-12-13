@@ -1,22 +1,68 @@
 /*Do not edit modules/_sprite directly asit is generated automatically by Gulp. Instead edit gulp/templates/sprite*/
-
-
 /*mustashe template system*/
 /*loop*/
-{{#shapes}}
+  {
+    {
+    #shapes
+  }
+}
 
 /*the rule applies only for the first item in the loop*/
-	{{#first}}
-		.icon {
-/*note how the url starts with '/' which means 'the root of the project'*/
-			background-image: url('/assets/images/sprites/{{{sprite}}}');
-			}
-	{{/first}}
-	
+  {
+    {
+    #first
+  }
+}
 
-	.icon--{{base}}{
-		width: {{width.outer}}px;
-		height: {{height.outer}}px;	
-		background-position: {{position.relative.xy}};
-	}
-{{/shapes}}
+.icon {
+  /*note how the url starts with '/' which means 'the root of the project'*/
+  background-image: url('/assets/images/sprites/{{{sprite}}}');
+}
+
+.no-svg .icon {
+  background-image: url('/assets/images/sprites/{{{sprite}}}');
+}
+
+  {
+    {
+    /first
+  }
+}
+
+.icon-- {
+    {
+    base
+  }
+}
+
+  {
+  width: {
+      {
+      width.outer
+    }
+  }
+
+  px;
+
+  height: {
+      {
+      height.outer
+    }
+  }
+
+  px;
+
+  background-position: {
+      {
+      position.relative.xy
+    }
+  }
+
+  ;
+}
+
+  {
+    {
+    /shapes
+  }
+}
