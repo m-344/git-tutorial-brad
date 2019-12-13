@@ -5,6 +5,11 @@ var gulp = require('gulp'),
 
 /*the variable config is an object literal which is passed as an agrument into svgSprite()*/
 var config = {
+  shape: {
+    spacing: {
+      padding: 1
+    }
+  },
   mode: {
     css: {
       // variables: {
