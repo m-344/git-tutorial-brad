@@ -14,14 +14,14 @@ class StickyHeader {
     this.addSmoothScrolling();
     this.refreshWaypoints();
   }
-
+  // the method attaches an object to the browsers global window scope
+  // bcs of this we do not need to add it to all waypoints
   refreshWaypoints() {
     this.lazyImages.load(function() {
-      // Waypoint is main waypoint object
-      // refreshAll() works for all waypoints on the website
       Waypoint.refreshAll();
     });
   }
+
 
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
