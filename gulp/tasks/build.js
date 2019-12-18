@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
-  del = require('del');
+  del = require('del'),
+  usemin = require('gulp-usemin');
 
 gulp.task('deleteDistFolder', function() {
   return del("./dist");
@@ -19,4 +20,10 @@ gulp.task('optimizeImages', function() {
     .pipe(gulp.dest("./dist/assets/images"));
 })
 
-gulp.task('build', gulp.series('deleteDistFolder', 'optimizeImages'));
+gulp.task('usemin', function() {
+  return gulp.src("./app/index.html")
+    .pipe(usemin())
+    .pipe(gulp.dest("./dist"))
+})
+
+gulp.task('build', gulp.series('deleteDistFolder', 'optimizeImages', 'usemin'));

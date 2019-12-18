@@ -32,3 +32,4 @@ dwsync.xml
 #custom
 node_modules/
 
+/dist
