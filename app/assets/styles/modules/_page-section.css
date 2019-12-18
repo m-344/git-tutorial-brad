@@ -38,7 +38,7 @@
       /* restriction by '.': only if the & has class lazyloaded */
       &.lazyloaded {
         /* 'top' and 'center' are alignment parameters */
-        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
         /* the property defines if the image is big or small enough to cover a div */
         background-size: cover;
       }
