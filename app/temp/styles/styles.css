@@ -916,7 +916,7 @@ a {
 
 .icon {
 /*note how the URL starts with '/' which means 'the root of the project'*/
-			background-image: url('assets/images/sprites/sprite-a150da70.svg');
+			background-image: url('/assets/images/sprites/sprite-a150da70.svg');
 			}
 
 /* .no-svg .icon {
