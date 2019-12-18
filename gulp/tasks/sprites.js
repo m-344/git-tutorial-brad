@@ -38,17 +38,22 @@ gulp.task('beginClean', function() {
 /*Creates an SVG graphic which merges all input svg files.*/
 /*Arguments of a task method: arg1='the name of the task', arg2='what the task does'*/
 gulp.task('createSprite', function() {
-  return gulp.src('./app/assets/images/icons/**/*.svg').pipe(svgSprite(config)).pipe(gulp.dest('./app/temp/sprite/'));
+  return gulp.src('./app/assets/images/icons/**/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('./app/temp/sprite/'));
 });
 
 /*Copies the graphic which was created by  the 'createSprite' task */
 gulp.task('copySpriteGraphic', function() {
-  return gulp.src('./app/temp/sprite/css/**/*.svg').pipe(gulp.dest('./app/assets/images/sprites'));
+  return gulp.src('./app/temp/sprite/css/**/*.svg')
+    .pipe(gulp.dest('./app/assets/images/sprites'));
 });
 
 /*copies sprite.css to /modules and renames it to _sprite.css*/
 gulp.task('copySprite', function() {
-  return gulp.src('./app/temp/sprite/css/**/*.css').pipe(rename('_sprite.css')).pipe(gulp.dest('./app/assets/styles/modules/'));
+  return gulp.src('./app/temp/sprite/css/**/*.css')
+    .pipe(rename('_sprite.css'))
+    .pipe(gulp.dest('./app/assets/styles/modules/'));
 });
 
 gulp.task('endClean', function() {
