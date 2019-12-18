@@ -1,12 +1,12 @@
-/*Do not edit modules/_sprite directly asit is generated automatically by Gulp. Instead edit gulp/templates/sprite*/
+/*Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite*/
 
 
-/*mustashe template system*/
+/*mustache template system*/
 /*loop*/
 
 /*the rule applies only for the first item in the loop*/
 		.icon {
-/*note how the url starts with '/' which means 'the root of the project'*/
+/*note how the URL starts with '/' which means 'the root of the project'*/
 			background-image: url('assets/images/sprites/sprite-a150da70.svg');
 			}
 
