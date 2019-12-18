@@ -586,7 +586,7 @@ a {
   }
       .page-section--testimonials.lazyloaded {
         /* 'top' and 'center' are alignment parameters */
-        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
         /* the property defines if the image is big or small enough to cover a div */
         background-size: cover;
       }
@@ -916,11 +916,11 @@ a {
 
 .icon {
 /*note how the url starts with '/' which means 'the root of the project'*/
-			background-image: url('/assets/images/sprites/sprite-a150da70.svg');
+			background-image: url('assets/images/sprites/sprite-a150da70.svg');
 			}
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--clear-view-escapes{
@@ -932,7 +932,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--comment{
@@ -944,7 +944,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--facebook{
@@ -956,7 +956,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--fire{
@@ -968,7 +968,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--globe{
@@ -980,7 +980,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--instagram{
@@ -992,7 +992,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--mail{
@@ -1004,7 +1004,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--rain{
@@ -1016,7 +1016,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--star{
@@ -1028,7 +1028,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--twitter{
@@ -1040,7 +1040,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--wifi{
@@ -1052,7 +1052,7 @@ a {
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 .icon--youtube{

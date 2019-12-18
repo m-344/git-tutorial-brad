@@ -7,11 +7,11 @@
 /*the rule applies only for the first item in the loop*/
 		.icon {
 /*note how the url starts with '/' which means 'the root of the project'*/
-			background-image: url('/assets/images/sprites/sprite-a150da70.svg');
+			background-image: url('assets/images/sprites/sprite-a150da70.svg');
 			}
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--clear-view-escapes{
@@ -23,7 +23,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--comment{
@@ -35,7 +35,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--facebook{
@@ -47,7 +47,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--fire{
@@ -59,7 +59,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--globe{
@@ -71,7 +71,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--instagram{
@@ -83,7 +83,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--mail{
@@ -95,7 +95,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--rain{
@@ -107,7 +107,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--star{
@@ -119,7 +119,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--twitter{
@@ -131,7 +131,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--wifi{
@@ -143,7 +143,7 @@
 /*the rule applies only for the first item in the loop*/
 
 /* .no-svg .icon {
-  background-image: url('/assets/images/sprites/');
+  background-image: url('assets/images/sprites/');
 } */
 
 	.icon--youtube{
