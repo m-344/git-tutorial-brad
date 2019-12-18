@@ -17,7 +17,7 @@ class StickyHeader {
   // the method attaches an object to the browsers global window scope
   // bcs of this we do not need to add it to all waypoints
   refreshWaypoints() {
-    this.lazyImages.load(function() {
+    this.lazyImages.on('load', function() {
       Waypoint.refreshAll();
     });
   }
