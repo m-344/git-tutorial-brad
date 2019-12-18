@@ -1,5 +1,10 @@
 var gulp = require('gulp'),
-  imagemin = require('gulp-imagemin');
+  imagemin = require('gulp-imagemin'),
+  del = require('del');
+
+gulp.task('deleteDistFolder', function() {
+  return del("./dist");
+})
 
 gulp.task('optimizeImages', function() {
   return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**'])
@@ -14,4 +19,4 @@ gulp.task('optimizeImages', function() {
     .pipe(gulp.dest("./dist/assets/images"));
 })
 
-gulp.task('build', gulp.series('optimizeImages'));
+gulp.task('build', gulp.series('deleteDistFolder', 'optimizeImages'));
