@@ -43,7 +43,7 @@ gulp.task('createSprite', function() {
     .pipe(gulp.dest('./app/temp/sprite/'));
 });
 
-/*Copies the graphic which was created by  the 'createSprite' task */
+/*Copies the graphic which was created by 'createSprite' task */
 gulp.task('copySpriteGraphic', function() {
   return gulp.src('./app/temp/sprite/css/**/*.svg')
     .pipe(gulp.dest('./app/assets/images/sprites'));
