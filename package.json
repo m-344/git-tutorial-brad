@@ -18,7 +18,7 @@
   "homepage": "https://github.com/m-344/git-tutorial-brad#readme",
   "dependencies": {
     "jquery": "^3.4.1",
-    "lazysizes": "^5.2.0-beta1",
+    "lazysizes": "^5.2.1",
     "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",
     "waypoints": "^4.0.1"
